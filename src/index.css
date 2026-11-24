@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  }
+
+  body {
+    font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+    line-height: 2.2;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.arabic-text {
+  font-family: 'Amiri', serif;
+  line-height: 2.35;
+  letter-spacing: 0;
+  word-spacing: 0.08em;
+}
+
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  line-height: 2.55;
+}
+
